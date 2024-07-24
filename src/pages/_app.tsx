@@ -15,8 +15,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <QueryClientProvider client={queryClient} contextSharing>
           <Layout>
             <DefaultSeo
-              defaultTitle="Wordle Game"
-              titleTemplate={`%s - Wordle Game`}
+              defaultTitle="Wordle for Jessa"
+              titleTemplate={`%s - Wordle for Jessa`}
               description="A word guessing game."
               robotsProps={{
                 nosnippet: true,

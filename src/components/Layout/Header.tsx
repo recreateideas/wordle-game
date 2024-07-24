@@ -29,7 +29,7 @@ export default function Header() {
         </Box>
         <Box>
           <Text fontSize="2xl" fontWeight="bold">
-            Wordle
+            Wordle for Jessa
           </Text>
         </Box>
         <HStack>
