@@ -1,8 +1,16 @@
 import { useUser } from "@/lib/useUser";
 import { GameStates } from "@/types";
 import {
-    Button, HStack, Modal, ModalBody,
-    ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text
+  Button,
+  HStack,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Text,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -56,7 +64,7 @@ export default function GameResultModal({
         <ModalOverlay />
         <ModalContent pb={5}>
           <ModalHeader textAlign={"center"}>
-            {gameState === "win" ? "Configuration" : "Lmao u lost"}
+            {gameState === "win" ? "Bless" : "Booooo"}
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>

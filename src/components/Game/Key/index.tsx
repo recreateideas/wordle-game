@@ -46,7 +46,7 @@ export default function Key({ value, status, onLetterClick, type }: Props) {
       w={
         type === "keyboard"
           ? {
-              base: 6,
+              base: 8,
               sm: 10,
               lg: 16,
             }
@@ -55,7 +55,7 @@ export default function Key({ value, status, onLetterClick, type }: Props) {
       h={
         type === "keyboard"
           ? {
-              base: 6,
+              base: 8,
               sm: 10,
               lg: 16,
             }
