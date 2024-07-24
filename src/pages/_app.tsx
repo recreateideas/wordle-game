@@ -6,9 +6,27 @@ import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
 import theme from "../lib/theme";
 import "../styles/globals.css";
+import { useEffect } from "react";
 const queryClient = new QueryClient();
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js").then(
+          (registration) => {
+            console.log(
+              "ServiceWorker registration successful with scope: ",
+              registration.scope
+            );
+          },
+          (err) => {
+            console.log("ServiceWorker registration failed: ", err);
+          }
+        );
+      });
+    }
+  }, []);
   return (
     <ChakraProvider theme={theme}>
       <SettingsProvider>
@@ -63,12 +81,12 @@ export default function App({ Component, pageProps }: AppProps) {
               openGraph={{
                 type: "website",
                 locale: "en_US",
-                url: "https://wrosedev.tech",
-                site_name: "WhiteRose Space",
+                url: "https://cladea.io",
+                site_name: "Wordle for Jessa",
                 profile: {
-                  firstName: "Đào",
-                  lastName: "Tuấn Anh",
-                  username: "whiterose.uchiha",
+                  firstName: "Claudio",
+                  lastName: "De Angelis",
+                  username: "cladea",
                   gender: "male",
                 },
                 images: [
