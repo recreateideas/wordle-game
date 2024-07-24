@@ -1,7 +1,8 @@
 import { useUser } from "@/lib/useUser";
 import { InfoIcon } from "@chakra-ui/icons";
 import {
-  Box, Highlight,
+  Box,
+  Highlight,
   HStack,
   Link,
   Modal,
@@ -11,7 +12,7 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import Key from "../Game/Key";
@@ -172,31 +173,12 @@ export default function GuideModal() {
             justifyContent={"center"}
           >
             <Box>
-              <Text>
-                This project is open-source. Find the code{" "}
-                <Link
-                  href="https://github.com/shoxie/wordle-game"
-                  textDecoration={"underline"}
-                  fontWeight={"bold"}
-                >
-                  here
-                </Link>
-              </Text>
+              One, here comes the two to the three to the four <br />
+              Tell &apos;em bring another out, we need plenty more <br />
+              Two steppin&apos; on the table, she don&apos;t need a dancefloor{" "}
+              <br />
+              Oh my, good Lord
             </Box>
-            <Box>
-              <Text>
-                I&apos;m also owner of{" "}
-                <Link
-                  href="https://wrosedev.tech/"
-                  textDecoration={"underline"}
-                  fontWeight={"bold"}
-                >
-                  this
-                </Link>{" "}
-                blog. Please check it out.
-              </Text>
-            </Box>
-            <Box>(づ｡◕‿‿◕｡)づ</Box>
           </ModalFooter>
         </ModalContent>
       </Modal>

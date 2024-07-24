@@ -33,6 +33,15 @@ export default function Key({ value, status, onLetterClick, type }: Props) {
           : "transparent"
       }
       border="2px"
+      color={
+        status === "correct"
+          ? "white"
+          : status === "present"
+          ? undefined
+          : status === "absent"
+          ? "gray.400"
+          : undefined
+      }
       borderColor={
         status === "correct"
           ? "green"
