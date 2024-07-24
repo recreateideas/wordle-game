@@ -3,10 +3,7 @@ import { SettingsProvider } from "@/context";
 import { ChakraProvider } from "@chakra-ui/react";
 import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
-import {
-    QueryClient,
-    QueryClientProvider
-} from "react-query";
+import { QueryClient, QueryClientProvider } from "react-query";
 import theme from "../lib/theme";
 import "../styles/globals.css";
 const queryClient = new QueryClient();
@@ -76,7 +73,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 },
                 images: [
                   {
-                    url: "https://wordie-game.vercel.app/static/images/socialbanner.png",
+                    url: "https://wordie-game.vercel.app/static/images/IMG_0824.jpeg",
                     alt: "Banner",
                   },
                 ],
