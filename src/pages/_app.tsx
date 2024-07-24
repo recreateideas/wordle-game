@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <DefaultSeo
               defaultTitle="Wordle for Jessa"
               titleTemplate={`%s - Wordle for Jessa`}
-              description="A word guessing game."
+              description="Jessa's word guessing game."
               robotsProps={{
                 nosnippet: true,
                 notranslate: true,
